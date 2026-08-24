@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from enum import IntEnum
 
+
 class MessageType(IntEnum):
     TEXT = 0x01
     PING = 0x02
@@ -8,8 +9,6 @@ class MessageType(IntEnum):
     ACK = 0x04
     ERROR = 0x05
 
-class MessageFlags(IntEnum):
-    ACK_REQUIRED = 0x01
 
 @dataclass
 class Packet:
